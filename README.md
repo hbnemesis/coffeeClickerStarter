@@ -30,7 +30,7 @@ Follow the directions in the code comments in the ```script.js``` file. You will
  
  ## Extra Credit!
  
- - Add CSS styling!
+ - Add CSS styling!   
  
  <hr/>
  
