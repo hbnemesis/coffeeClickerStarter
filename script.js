@@ -51,8 +51,7 @@ function getUnlockedProducers(data) {
   // use the Array.prototype.filter() method
   // filter through the data.producers property, and return an array with only the producers whose
   // unlocked property is true
-  const unlockedProducers = data.producers.filter(data.producers.unlocked === true);
-  console.log(unlockedProducers);
+  data.producers.filter(producer => producer.unlocked === true);
 }
 
 // You do not need to edit this function
@@ -175,9 +174,12 @@ updateCoffeeView(data.coffee);
 }
 
 // Event Listeners
-bigCoffee.addEventListener("click")
+
 // add a 'click' event listener to the bigCoffee element (that you referenced above)
 // the event listener should call the clickCoffee function, and pass in the global data object
+bigCoffee.addEventListener('click', () => {
+  clickCoffee
+})
 
 // add a 'click' event listener to the element (referenced at the top of the file)
 // the event listener should call the buyButtonClick function and pass it the event, and the global data object
